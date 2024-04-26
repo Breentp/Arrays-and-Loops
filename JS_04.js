@@ -36,7 +36,7 @@ function numDiv(num) {
     return res2;
 }
 
-console.log(numDiv(n2));
+console.log(numDiv(n));
 
 
 //////////////////////////////////////////////////////////
@@ -69,20 +69,37 @@ function onlineUsers(arr4) {
     const count =users.length;
     let res4;
     if (count === 1) {
-        res3 = `${arr3[0]} is online`;
+        res4 = `${arr4[0]} is online`;
     } else if (count === 2 ) {
-        res3 = `${arr3[0]}, ${arr3[1]} are online`;
+        res4 = `${arr4[0]}, ${arr4[1]} are online`;
     } else {
-        res3 = `${arr[0]}, ${arr[1]} and ${count - 2} more are online`;
+        res4 = `${arr4[0]}, ${arr4[1]} and ${count - 2} more are online`;
     }
-    return res3;
+    return res4;
 }
+
+console.log(onlineUsers(users));
 
 //////////////////////////////////////////////////////////
 
 
 //* Array of Multiples
 
+const multi2 = [2, 10];
+const multi17 = [17, 6];
+
+function multiTable(arr5) {
+    let res5 = [];
+    let tab = 0;
+   /* for (let i = arr5.length - 1; i = 0; i--) {
+        tab = arr5 * i;
+        res5.push(tab);
+        res5.push(tab);
+    }
+    return res5; */
+    arr5.forEach((tab) => res5.push(arr5 * tab))
+}
+console.log(multiTable(multi2));
 
 //////////////////////////////////////////////////////////
 
@@ -90,6 +107,22 @@ function onlineUsers(arr4) {
 
 //* Positive dominance in Array
 
+const metriz1 = [-1, -3, -5, 4, 6767];
+const metriz2 = [13, 4, 96, -21, 58];
+
+function positiveMet(arr6) {
+    res6 = [];
+    for (let i = 0; i = arr6.lenght; i++) {
+        if (arr6 > 0) {
+            res6.push(arr6);
+        }
+    }
+     if ((res6.lenght - 1) > arr6.lenght) {
+        console.log("The array is positively dominant.");
+     } else {
+        console.log("The array is negatively dominant.")
+     }
+}
 
 //////////////////////////////////////////////////////////
 
